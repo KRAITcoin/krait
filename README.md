@@ -1,5 +1,5 @@
 <h2><strong>Krait Staging Repository (Version 2.4.0)</strong></h2>
-<p>More information at krait.com Visit our ANN thread at https://bitcointalk.org/index.php?topic=1831629</p>
+<p>More information at krait.com Visit our ANN thread at https://bitcointalk.org/index.php?topic=3090655.0</p>
 <h3><strong>Coin specs:</strong></h3>
 <p><strong><span style="color: #800080;"><em>Algo:</em></span></strong></p>
 <ul>
