@@ -1,0 +1,30 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/krait_bg.qm</file>
+        <file alias="ca">locale/krait_ca.qm</file>
+        <file alias="cs">locale/krait_cs.qm</file>
+        <file alias="da">locale/krait_da.qm</file>
+        <file alias="de">locale/krait_de.qm</file>
+        <file alias="en">locale/krait_en.qm</file>
+        <file alias="en_US">locale/krait_en_US.qm</file>
+        <file alias="es">locale/krait_es.qm</file>
+        <file alias="fi">locale/krait_fi.qm</file>
+        <file alias="fr_FR">locale/krait_fr_FR.qm</file>
+        <file alias="hr">locale/krait_hr.qm</file>
+        <file alias="it">locale/krait_it.qm</file>
+        <file alias="ja">locale/krait_ja.qm</file>
+        <file alias="ko_KR">locale/krait_ko_KR.qm</file>
+        <file alias="nl">locale/krait_nl.qm</file>
+        <file alias="pl">locale/krait_pl.qm</file>
+        <file alias="pt">locale/krait_pt.qm</file>
+        <file alias="pt_BR">locale/krait_pt_BR.qm</file>
+        <file alias="ro_RO">locale/krait_ro_RO.qm</file>
+        <file alias="ru">locale/krait_ru.qm</file>
+        <file alias="sk">locale/krait_sk.qm</file>
+        <file alias="sv">locale/krait_sv.qm</file>
+        <file alias="tr">locale/krait_tr.qm</file>
+        <file alias="uk">locale/krait_uk.qm</file>
+        <file alias="zh_CN">locale/krait_zh_CN.qm</file>
+        <file alias="zh_TW">locale/krait_zh_TW.qm</file>
+    </qresource>
+</RCC>

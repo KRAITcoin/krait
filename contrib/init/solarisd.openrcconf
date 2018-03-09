@@ -1,0 +1,26 @@
+# /etc/conf.d/kraitd: config file for /etc/init.d/kraitd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/krait/krait.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/kraitd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/kraitd.pid"
+
+# Where to write kraitd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/kraitd"
+
+# User and group to own kraitd process
+#BITCOIND_USER="krait"
+#BITCOIND_GROUP="krait"
+
+# Path to kraitd executable
+#BITCOIND_BIN="/usr/bin/kraitd"
+
+# Nice value to run kraitd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

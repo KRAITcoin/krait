@@ -1,0 +1,26 @@
+[Unit]
+Description=Krait's distributed currency daemon
+After=network.target
+
+[Service]
+User=krait
+Group=krait
+
+Type=forking
+PIDFile=/var/lib/kraitd/kraitd.pid
+
+ExecStart=/usr/bin/kraitd -daemon -pid=/var/lib/kraitd/kraitd.pid \
+          -conf=/etc/krait/krait.conf -datadir=/var/lib/kraitd
+
+ExecStop=-/usr/bin/krait-cli -conf=/etc/krait/krait.conf \
+         -datadir=/var/lib/kraitd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

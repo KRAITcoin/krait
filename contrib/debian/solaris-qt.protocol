@@ -1,0 +1,11 @@
+[Protocol]
+exec=krait-qt '%u'
+protocol=krait
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Krait
+Comment=Krait P2P Cryptocurrency
+Comment[fr]=Krait, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Krait, eşten eşe kriptografik sanal para birimi
+Exec=krait-qt %u
+Terminal=false
+Type=Application
+Icon=krait128
+MimeType=x-scheme-handler/krait;
+Categories=Office;Finance;
