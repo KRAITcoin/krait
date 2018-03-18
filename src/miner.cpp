@@ -407,12 +407,18 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         LogPrintf("CreateNewBlock(): total size %u\n", nBlockSize);
 
         // Compute final coinbase transaction.
-		txNew.vin[0].scriptSig = CScript() << nHeight << OP_0;
+		if (nHeight > Params().LAST_POW_BLOCK())
+		{
+			pblock->vtx[0].vin[0].scriptSig = CScript() << nHeight << OP_0;
+		} else {
+			txNew.vin[0].scriptSig = CScript() << nHeight << OP_0;
+		}
         
         if (!fProofOfStake) {
             pblock->vtx[0] = txNew;
             pblocktemplate->vTxFees[0] = -nFees;
         }
+
 
         // Fill in header
         pblock->hashPrevBlock = pindexPrev->GetBlockHash();
