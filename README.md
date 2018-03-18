@@ -7,16 +7,16 @@
 </ul>
 <p><strong><span style="color: #800080;"><em>PoW Block Reward:</em></span></strong></p>
 <ul>
-<li>block -> 1 = 0.5 KRAIT </li>
+<li>block -> 1 = 0.5 KRAIT (MN reward 20%) </li>
 </ul>
 <ul>
-<li>block -> 1440 = 6 KRAIT </li>
+<li>block -> 1440 = 6 KRAIT (MN reward 20%) </li>
 </ul>
 <ul>
-<li>block -> 86400 = 5 KRAIT </li>
+<li>block -> 86400 = 5 KRAIT (MN reward 20%) </li>
 </ul>
 <ul>
-<li>block -> 151200 = 4 KRAIT </li>
+<li>block -> 151200 = 4 KRAIT (MN reward 50%) </li>
 </ul>
 <ul>
 <li>block -> 259200 = 3 KRAIT </li>
@@ -37,19 +37,9 @@
 <ul>
 <li>PoS Phase: Infinte</li>
 </ul>
-<p><strong><span style="color: #800080;"><em>PoW Phase 1:</em></span></strong></p>
-<ul>
-<li>[block# 1] 810000 Premine to support the swap.</li>
-</ul>
-<p><strong><span style="color: #800080;"><em>PoW Phase 2:</em></span></strong></p>
+<p><strong><span style="color: #800080;"><em>PoW Phase:</em></span></strong></p>
 <ul>
 <li>[block#&rsquo;s 2-259200] Approx 180 Days</li>
-</ul>
-<p><strong><span style="color: #800080;"><em>PoW Rewards Breakdown:</em></span></strong></p>
-<ul>
-<li>[block&rsquo;s &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2-43200] 20% MN (0.4 KRAIT) &nbsp; &nbsp;/ 80% MINER (1.6 KRAIT)</li>
-<li>[block&rsquo;s &nbsp; 43201-151200] 20% MN (0.4 KRAIT) &nbsp; &nbsp;/ 70% MINER (1.4 KRAIT) &nbsp;/ 10% Available to the budget system (0.20 KRAIT)</li>
-<li>[block&rsquo;s 151201-259200] 45% MN (0.9 KRAIT) / 45% MINER (0.9 KRAIT) / 10% Available to the budget system ( &nbsp;0.2 KRAIT)</li>
 </ul>
 <p><strong><span style="color: #800080;"><em>PoS Rewards Breakdown:</em></span></strong></p>
 <ul>
