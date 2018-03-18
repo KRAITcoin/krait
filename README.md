@@ -7,7 +7,19 @@
 </ul>
 <p><strong><span style="color: #800080;"><em>PoW Block Reward:</em></span></strong></p>
 <ul>
-<li>[block# 2-43200] 20% MN (0.4 KRAIT) / 80% MINER (1.6 KRAIT) [block# 43201-151200] 20% MN (0.4 KRAIT) / 70% MINER (1.4 KRAIT) / 10% Available to the budget system (0.20 KRAIT) [block# 151201-259200] 45% MN (0.9 KRAIT) / 45% MINER (0.9 KRAIT) / 10% Available to the budget system (0.2 KRAIT)</li>
+<li>block -> 1 = 0.5 KRAIT </li>
+</ul>
+<ul>
+<li>block -> 1440 = 6 KRAIT </li>
+</ul>
+<ul>
+<li>block -> 86400 = 5 KRAIT </li>
+</ul>
+<ul>
+<li>block -> 151200 = 4 KRAIT </li>
+</ul>
+<ul>
+<li>block -> 259200 = 3 KRAIT </li>
 </ul>
 <p><strong><span style="color: #800080;"><em>PoS Block Reward:</em></span></strong></p>
 <ul>
@@ -41,16 +53,16 @@
 </ul>
 <p><strong><span style="color: #800080;"><em>PoS Rewards Breakdown:</em></span></strong></p>
 <ul>
-<li>PoS Phase 1: [blocks 259201-302399] 1 KRAIT (90% distributed to staker and masternode - 10% available to budget system)</li>
-<li>PoS Phase 2: [blocks 302400-345599] 0.95 KRAIT (90% distributed to staker and masternode - 10% available to budget system)</li>
-<li>PoS Phase 3: [blocks 345600-388799] 0.9 KRAIT (90% distributed to staker and masternode - 10% available to budget system)</li>
-<li>PoS Phase 4: [blocks 388800-431999] 0.85 KRAIT (90% distributed to staker and masternode - 10% available to budget system)</li>
-<li>PoS Phase 5: [blocks 432000-475199] 0.80 KRAIT (90% distributed to staker and masternode - 10% available to budget system)</li>
-<li>PoS Phase 6: [blocks 475200-518399] 0.75 KRAIT (90% distributed to staker and masternode - 10% available to budget system)</li>
-<li>PoS Phase 7: [blocks 518400-561599] 0.70 KRAIT (90% distributed to staker and masternode - 10% available to budget system)</li>
-<li>PoS Phase 8: [blocks 561600-604799] 0.75 KRAIT (90% distributed to staker and masternode - 10% available to budget system)</li>
-<li>PoS Phase 9: [blocks 604800-647999] 0.70 KRAIT (90% distributed to staker and masternode - 10% available to budget system)</li>
-<li>PoS Phase X: [blocks 648000-Infinite] &nbsp; 0.25 KRAIT (90% distributed to staker and masternode - 10% available to budget system)</li>
+<li>PoS Phase 1: [blocks 259201-302399]    3 KRAIT (90% distributed to staker and masternode - 10% available to budget system)</li>
+<li>PoS Phase 2: [blocks 302400-345599] 2.85 KRAIT (90% distributed to staker and masternode - 10% available to budget system)</li>
+<li>PoS Phase 3: [blocks 345600-388799] 2.70 KRAIT (90% distributed to staker and masternode - 10% available to budget system)</li>
+<li>PoS Phase 4: [blocks 388800-431999] 2.65 KRAIT (90% distributed to staker and masternode - 10% available to budget system)</li>
+<li>PoS Phase 5: [blocks 432000-475199] 2.40 KRAIT (90% distributed to staker and masternode - 10% available to budget system)</li>
+<li>PoS Phase 6: [blocks 475200-518399] 2.35 KRAIT (90% distributed to staker and masternode - 10% available to budget system)</li>
+<li>PoS Phase 7: [blocks 518400-561599] 2.10 KRAIT (90% distributed to staker and masternode - 10% available to budget system)</li>
+<li>PoS Phase 8: [blocks 561600-604799] 2.25 KRAIT (90% distributed to staker and masternode - 10% available to budget system)</li>
+<li>PoS Phase 9: [blocks 604800-647999] 2.10 KRAIT (90% distributed to staker and masternode - 10% available to budget system)</li>
+<li>PoS Phase X: [blocks 648000-Infinite] &nbsp; 0.75 KRAIT (90% distributed to staker and masternode - 10% available to budget system)</li>
 </ul>
 <br/>
 <p>&nbsp;</p>
