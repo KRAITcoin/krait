@@ -28,7 +28,7 @@ packages:
 - "python-setuptools"
 - "fonts-tuffy"
 remotes:
-- "url": "https://github.com/krait-project/krait.git"
+- "url": "https://github.com/kraitcoin/krait.git"
   "dir": "krait"
 files:
 - "MacOSX10.11.sdk.tar.gz"

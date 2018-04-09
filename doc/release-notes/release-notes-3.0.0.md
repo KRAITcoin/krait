@@ -1,13 +1,13 @@
 Krait Core version 3.0.0 is now available from:
 
-  <https://github.com/krait-project/krait/releases>
+  <https://github.com/kraitcoin/krait/releases>
 
 This is a new major version release, including various bug fixes and
 performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/krait-project/krait/issues>
+  <https://github.com/kraitcoin/krait/issues>
 
 Mandatory Update
 ==============

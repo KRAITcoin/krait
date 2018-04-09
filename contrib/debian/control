@@ -23,8 +23,8 @@ Build-Depends: debhelper,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
 Homepage: http://www.krait.com
-Vcs-Git: git://github.com/Krait-Project/Krait.git
-Vcs-Browser: http://github.com/Krait-Project/Krait
+Vcs-Git: git://github.com/Kraitcoin/Krait.git
+Vcs-Browser: http://github.com/Kraitcoin/Krait
 
 Package: kraitd
 Architecture: any

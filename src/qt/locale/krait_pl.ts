@@ -1217,9 +1217,9 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/krait-project/krait-project-translations</source>
+https://www.transifex.com/kraitcoin/krait-project-translations</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/krait-project/krait-project-translations </translation>
+https://www.transifex.com/kraitcoin/krait-project-translations </translation>
     </message>
     <message>
         <source>Connect to the Krait network through a SOCKS5 proxy.</source>

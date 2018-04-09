@@ -1587,9 +1587,9 @@ Favor verificar o endereço e tente novamente.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/krait-project/krait-project-translations</source>
+https://www.transifex.com/kraitcoin/krait-project-translations</source>
         <translation>Linguagem não encontrada ou tradução incompleta? Ajude contribuido com traduções aqui:
-https://www.transifex.com/krait-project/krait-project-translations</translation>
+https://www.transifex.com/kraitcoin/krait-project-translations</translation>
     </message>
     <message>
         <source>Connect to the Krait network through a SOCKS5 proxy.</source>
