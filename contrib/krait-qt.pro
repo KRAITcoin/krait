@@ -546,7 +546,6 @@ SOURCES += src/activemasternode.cpp \
            src/test/DoS_tests.cpp \
            src/test/getarg_tests.cpp \
            src/test/hash_tests.cpp \
-           src/test/key_tests.cpp \
            src/test/main_tests.cpp \
            src/test/mempool_tests.cpp \
            src/test/miner_tests.cpp \
