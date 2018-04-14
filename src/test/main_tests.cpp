@@ -27,7 +27,7 @@ BOOST_AUTO_TEST_CASE(subsidy_limit_test)
     for (int nHeight = 1; nHeight < 1440; nHeight += 1) {
         /* PoW Phase instamine */
         CAmount nSubsidy = GetBlockValue(nHeight);
-        BOOST_CHECK(nSubsidy <= 0,5 * COIN);
+        BOOST_CHECK(nSubsidy <= 0.5 * COIN);
         nSum += nSubsidy;
     }
 
