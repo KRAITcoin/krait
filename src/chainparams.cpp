@@ -313,13 +313,18 @@ public:
     }
     //! Published setters to allow changing values in unit test cases
     virtual void setSubsidyHalvingInterval(int anSubsidyHalvingInterval) { nSubsidyHalvingInterval = anSubsidyHalvingInterval; }
+    virtual void setEnforceBlockUpgradeMajority(int anEnforceBlockUpgradeMajority) { nEnforceBlockUpgradeMajority = anEnforceBlockUpgradeMajority; }
+    virtual void setRejectBlockOutdatedMajority(int anRejectBlockOutdatedMajority) { nRejectBlockOutdatedMajority = anRejectBlockOutdatedMajority; }
+    virtual void setToCheckBlockUpgradeMajority(int anToCheckBlockUpgradeMajority) { nToCheckBlockUpgradeMajority = anToCheckBlockUpgradeMajority; }
     virtual void setDefaultConsistencyChecks(bool afDefaultConsistencyChecks) { fDefaultConsistencyChecks = afDefaultConsistencyChecks; }
     virtual void setAllowMinDifficultyBlocks(bool afAllowMinDifficultyBlocks) { fAllowMinDifficultyBlocks = afAllowMinDifficultyBlocks; }
     virtual void setSkipProofOfWorkCheck(bool afSkipProofOfWorkCheck) { fSkipProofOfWorkCheck = afSkipProofOfWorkCheck; }
 };
 static CUnitTestParams unitTestParams;
 
+
 static CChainParams* pCurrentParams = 0;
+
 CModifiableParams* ModifiableParams()
 {
     assert(pCurrentParams);
@@ -327,12 +332,12 @@ CModifiableParams* ModifiableParams()
     return (CModifiableParams*)&unitTestParams;
 }
 
-
 const CChainParams& Params()
 {
     assert(pCurrentParams);
     return *pCurrentParams;
 }
+
 CChainParams& Params(CBaseChainParams::Network network)
 {
     switch (network) {
@@ -354,6 +359,7 @@ void SelectParams(CBaseChainParams::Network network)
     SelectBaseParams(network);
     pCurrentParams = &Params(network);
 }
+
 bool SelectParamsFromCommandLine()
 {
     CBaseChainParams::Network network = NetworkIdFromCommandLine();
