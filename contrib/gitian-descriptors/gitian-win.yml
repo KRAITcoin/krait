@@ -119,7 +119,7 @@ script: |
   # Create the release tarball using (arbitrarily) the first host
   ./autogen.sh
   CONFIG_SITE=${BASEPREFIX}/`echo "${HOSTS}" | awk '{print $1;}'`/share/config.site ./configure --prefix=/
-  make dist
+  make dist ${MAKEOPTS}
   SOURCEDIST=`echo krait-*.tar.gz`
   DISTNAME=`echo ${SOURCEDIST} | sed 's/.tar.*//'`
 
@@ -144,8 +144,8 @@ script: |
 
     CONFIG_SITE=${BASEPREFIX}/${i}/share/config.site ./configure --prefix=/ --disable-ccache --disable-maintainer-mode --disable-dependency-tracking ${CONFIGFLAGS} CFLAGS="${HOST_CFLAGS}" CXXFLAGS="${HOST_CXXFLAGS}"
     make ${MAKEOPTS}
-    make deploy
-    make install DESTDIR=${INSTALLPATH}
+    make deploy ${MAKEOPTS}
+    make install DESTDIR=${INSTALLPATH} ${MAKEOPTS}
     cp -f krait-*setup*.exe $OUTDIR/
     cd installed
     # mv ${DISTNAME}/bin/*.dll ${DISTNAME}/lib/ # temporarily disabled for Zerocoin
