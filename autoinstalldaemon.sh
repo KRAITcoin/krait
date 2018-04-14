@@ -3,8 +3,8 @@ sudo apt-get install software-properties-common -y
 sudo add-apt-repository ppa:bitcoin/bitcoin
 sudo apt-get update && apt-get install libdb4.8-dev libdb4.8++-dev -y
 git clone https://github.com/KRAITcoin/krait 
-chmod -R a+rwx Krait
-cd Krait
+chmod -R a+rwx krait
+cd krait
 bash autogen.sh
 ./configure --disable-test --with-incompatible-bdb
 make
