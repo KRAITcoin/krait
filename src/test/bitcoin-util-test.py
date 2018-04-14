@@ -6,8 +6,8 @@
 import os
 import bctest
 import buildenv
-import sys
-sys.exit(0)
+
 if __name__ == '__main__':
- #bctest.bctester(os.environ["srcdir"] + "/test/data", "bitcoin-util-test.json",buildenv)
+	bctest.bctester(os.environ["srcdir"] + "/test/data",
+			"bitcoin-util-test.json",buildenv)
 
