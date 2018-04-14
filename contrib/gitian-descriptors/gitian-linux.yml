@@ -42,6 +42,7 @@ script: |
   HOST_CFLAGS="-O2 -g"
   HOST_CXXFLAGS="-O2 -g"
   HOST_LDFLAGS=-static-libstdc++
+  MAKEOPTS="-j3"
 
   export QT_RCC_TEST=1
   export GZIP="-9n"
