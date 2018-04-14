@@ -328,8 +328,6 @@ CModifiableParams* ModifiableParams()
 }
 
 
-
-
 const CChainParams& Params()
 {
     assert(pCurrentParams);
@@ -344,7 +342,7 @@ CChainParams& Params(CBaseChainParams::Network network)
         return testNetParams;
     case CBaseChainParams::REGTEST:
         return regTestParams;
-		case CBaseChainParams::UNITTEST:
+	case CBaseChainParams::UNITTEST:
         return unitTestParams;
     default:
         assert(false && "Unimplemented network");
