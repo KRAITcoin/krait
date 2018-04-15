@@ -109,8 +109,8 @@ public:
         nModifierUpdateBlock = 1;
 		
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
-        nZerocoinStartTime = 1543653200; // April 16, 2019 21:00:00 UTC
-		nZerocoinStartHeight = 262596;
+        nZerocoinStartHeight = nLastPOWBlock + 100;
+        nZerocoinStartTime = 1520530811 + nZerocoinStartHeight*nTargetSpacing; 
 		
 		const char* pszTimestamp = "KRAIT 18-02-2018";
 		
