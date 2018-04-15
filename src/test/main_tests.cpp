@@ -18,35 +18,35 @@ BOOST_AUTO_TEST_CASE(subsidy_limit_test)
 {
     CAmount nSum = 0;
     for (int nHeight = 0; nHeight < 1; nHeight += 1) {
-        /* premine in block 1 (16000000,001 KRAIT) */
+       /* premine in block 1 (16000000,001 KRAIT) 
         CAmount nSubsidy = GetBlockValue(nHeight);
         BOOST_CHECK(nSubsidy <= 16000000 * COIN);
         nSum += nSubsidy;
     }
 
     /*for (int nHeight = 1; nHeight < 1440; nHeight += 1) {
-        /* PoW Phase instamine */
+         PoW Phase instamine 
         CAmount nSubsidy = GetBlockValue(nHeight);
         BOOST_CHECK(nSubsidy <= 0.5 * COIN);
         nSum += nSubsidy;
     }
 
     for (int nHeight = 1440; nHeight < 86400; nHeight += 1) {
-        /* PoW Phase One */
+         PoW Phase One 
         CAmount nSubsidy = GetBlockValue(nHeight);
         BOOST_CHECK(nSubsidy <= 6 * COIN);
         nSum += nSubsidy;
     }
 	
 	for (int nHeight = 86400; nHeight < 151200; nHeight += 1) {
-        /* PoW Phase One2 */
+         PoW Phase One2 
         CAmount nSubsidy = GetBlockValue(nHeight);
         BOOST_CHECK(nSubsidy <= 5 * COIN);
         nSum += nSubsidy;
     }
 
     for (int nHeight = 151200; nHeight < 259200; nHeight += 1) {
-        /* PoW Phase Two */
+         PoW Phase Two 
         CAmount nSubsidy = GetBlockValue(nHeight);
         BOOST_CHECK(nSubsidy <= 4 * COIN);
         BOOST_CHECK(MoneyRange(nSubsidy));
