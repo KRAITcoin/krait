@@ -534,7 +534,6 @@ SOURCES += src/activemasternode.cpp \
            src/test/alert_tests.cpp \
            src/test/allocator_tests.cpp \
            src/test/base32_tests.cpp \
-           src/test/base58_tests.cpp \
            src/test/base64_tests.cpp \
            src/test/bip32_tests.cpp \
            src/test/bloom_tests.cpp \
