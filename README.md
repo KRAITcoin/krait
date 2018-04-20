@@ -13,6 +13,9 @@
 <li>block -> 1440 = 6 KRAIT (MN reward 20%) </li>
 </ul>
 <ul>
+<li>block -> 43200 = 6 KRAIT (MN reward 30%) </li>
+</ul>
+<ul>
 <li>block -> 86400 = 5 KRAIT (MN reward 20%) </li>
 </ul>
 <ul>
