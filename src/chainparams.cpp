@@ -65,6 +65,7 @@ static const Checkpoints::CCheckpointData dataTestnet = {
     0,          // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     500       // * estimated number of transactions per day after checkpoint
+	};
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
     boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataRegtest = {
