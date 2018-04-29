@@ -56,15 +56,12 @@ static const Checkpoints::CCheckpointData data = {
     14400        // * estimated number of transactions per day after checkpoint
 };
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of
-	(0, uint256("0x00000a805ecead27f9fab795b6fcdac1da6bfacaca34bde6b62ae966f3c38610"));
-
+    boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
-    1524922264, // * UNIX timestamp of last checkpoint block
-    0,          // * total number of transactions between genesis and last checkpoint
-                //   (the tx=... number in the SetBestChain debug.log lines)
-    500       // * estimated number of transactions per day after checkpoint
+    1740710,
+    0,
+    250};
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
     boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataRegtest = {
@@ -201,22 +198,24 @@ public:
         pchMessageStart[1] = 0x76;
         pchMessageStart[2] = 0x65;
         pchMessageStart[3] = 0xba;
-		vAlertPubKey = ParseHex("0484d90e17b407221bc32d44832716418f090c323c594749d66adf3ff5c630bad489712738ada058d25a676f3dfa964258db28d3dbb58097f03cc8f2b4d22eb8e5");
-        nDefaultPort = 60022;
-        
-		nTargetTimespan = 1 * 60; // Krait: 1 minute
+        vAlertPubKey = ParseHex("000010e83b2703ccf322f7dbd62dd5855ac7c10bd055814ce121ba32607d573b8810c02c0582aed05b4deb9c4b77b26d92428c61256cd42774babea0a073b2ed0c9");
+        nDefaultPort = 51474;
+        nMinerThreads = 0;
+        nTargetTimespan = 1 * 60; // Krait: 1 day
         nTargetSpacing = 1 * 60;  // Krait: 1 minute
         nLastPOWBlock = 200;
-        nMaturity = 7;
-        nModifierUpdateBlock = 1;
+        nMaturity = 15;
+        nMasternodeCountDrift = 4;
+        nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
         nMaxMoneyOut = 43199500 * COIN;
-        nZerocoinStartHeight = nLastPOWBlock + 100;
-        nZerocoinStartTime = 1524922264 + nZerocoinStartHeight*nTargetSpacing; 
-        genesis.nTime = 1524922264;
-        genesis.nNonce = 20879632;
+        nZerocoinStartHeight = 201576;
+        //! Modify the testnet genesis block so the timestamp is valid for a later start.
+        genesis.nTime = 1454124731;
+        genesis.nNonce = 2402015;
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000a805ecead27f9fab795b6fcdac1da6bfacaca34bde6b62ae966f3c38610"));
-        assert(genesis.hashMerkleRoot == uint256("0xd937e75cb33178449539789d86288a0cf8280a095113c0ef19a3a2f1cdff1c7b"));
+        //assert(hashGenesisBlock == uint256("0x0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818"));
+        vFixedSeeds.clear();
+        vSeeds.clear();
         vSeeds.push_back(CDNSSeedData("194.87.101.240", "194.87.101.240"));
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet krait addresses start with 'x' or 'y'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet krait script addresses start with '8' or '9'
@@ -233,13 +232,13 @@ public:
         fAllowMinDifficultyBlocks = true;
         fDefaultConsistencyChecks = false;
         fRequireStandard = false;
-        fMineBlocksOnDemand = true;
+        fMineBlocksOnDemand = false;
         fTestnetToBeDeprecatedFieldRPC = true;
         nPoolMaxTransactions = 2;
-        strSporkKey = "0484d90e17b407221bc32d44832716418f090c323c594749d66adf3ff5c630bad489712738ada058d25a676f3dfa964258db28d3dbb58097f03cc8f2b4d22eb8e5";
+        strSporkKey = "04348C2F50F90267E64FACC65BFDC9D0EB147D090872FB97ABAE92E9A36E6CA60983E28E741F8E7277B11A7479B626AC115BA31463AC48178A5075C5A9319D4A38";
         strObfuscationPoolDummyAddress = "y57cqfGRkekRyDRNeJiLtYVEbvhXrNbmox";
-        nStartMasternodePayments = 1524922264; //Fri, 09 Jan 2015 21:05:58 GMT
-        nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee. We have to make this very short 
+        nStartMasternodePayments = 1420837558; //Fri, 09 Jan 2015 21:05:58 GMT
+        nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short 
                                        // here because we only have a 8 block finalization window on testnet
     }
     const Checkpoints::CCheckpointData& Checkpoints() const
