@@ -46,14 +46,16 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
 	(0, uint256("0x000008f98da9a790d44ff144e24262fe56d9f7ce7000b7c30c84c45da5c895a9"))
-	(2, uint256("0x000002ad7099c49f639bcf82c5d8c390897624326579100511dcfa88ab6684f4"));
+	(2, uint256("0x000002ad7099c49f639bcf82c5d8c390897624326579100511dcfa88ab6684f4"))
+    (246325, uint256("0x000000001102e9a145f2e2cae79c28eb8b202bcefc74a2dd54e211efd1984581"));
+	
 	
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1520531253, // * UNIX timestamp of last checkpoint block
-    2,    // * total number of transactions between genesis and last checkpoint
+    1536088757, // * UNIX timestamp of last checkpoint block
+    280766,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
-    14400        // * estimated number of transactions per day after checkpoint
+    2880        // * estimated number of transactions per day after checkpoint
 };
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     boost::assign::map_list_of(0, uint256("0x001"));
@@ -133,11 +135,7 @@ public:
         assert(hashGenesisBlock == uint256("0x000008f98da9a790d44ff144e24262fe56d9f7ce7000b7c30c84c45da5c895a9"));
         assert(genesis.hashMerkleRoot == uint256("0xd937e75cb33178449539789d86288a0cf8280a095113c0ef19a3a2f1cdff1c7b"));
 		
-        vSeeds.push_back(CDNSSeedData("194.87.101.240", "194.87.101.240"));
-		vSeeds.push_back(CDNSSeedData("195.133.197.91", "195.133.197.91"));
-		vSeeds.push_back(CDNSSeedData("alfa.kraitcoin.net", "alfa.kraitcoin.net"));
-		vSeeds.push_back(CDNSSeedData("beta.kraitcoin.net", "beta.kraitcoin.net"));
-		
+        vSeeds.clear();
 
 		
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63);
