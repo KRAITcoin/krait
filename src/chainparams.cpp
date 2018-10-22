@@ -134,8 +134,11 @@ public:
 		
         assert(hashGenesisBlock == uint256("0x000008f98da9a790d44ff144e24262fe56d9f7ce7000b7c30c84c45da5c895a9"));
         assert(genesis.hashMerkleRoot == uint256("0xd937e75cb33178449539789d86288a0cf8280a095113c0ef19a3a2f1cdff1c7b"));
-	vFixedSeeds.clear();
-        vSeeds.clear();
+	    
+		vSeeds.push_back(CDNSSeedData("194.87.101.240", "194.87.101.240"));
+		vSeeds.push_back(CDNSSeedData("195.133.197.91", "195.133.197.91"));
+		vSeeds.push_back(CDNSSeedData("alfa.kraitcoin.net", "alfa.kraitcoin.net"));
+		vSeeds.push_back(CDNSSeedData("beta.kraitcoin.net", "beta.kraitcoin.net"));
 
 		
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63);
