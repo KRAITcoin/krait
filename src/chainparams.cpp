@@ -105,7 +105,7 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // Krait: 1 minute
         nTargetSpacing = 1 * 60;  // Krait: 1 minute
-        nMaturity = 102;
+        nMaturity = 6;
 		nMaxMoneyOut = 10000000000 * COIN;
         /** Height or Time Based Activations **/
         nLastPOWBlock = 248300;
