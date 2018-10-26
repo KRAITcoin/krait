@@ -104,10 +104,10 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // Krait: 1 minute
         nTargetSpacing = 1 * 60;  // Krait: 1 minute
-        nMaturity = 6;
+        nMaturity = 102;
 		nMaxMoneyOut = 10000000000 * COIN;
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 259200;
+        nLastPOWBlock = 248350;
         nModifierUpdateBlock = 1;
 		
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
