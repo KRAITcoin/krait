@@ -112,7 +112,7 @@ public:
         nModifierUpdateBlock = 1;
 		
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
-        nZerocoinStartHeight = 248400; // need for tests pos phase
+        nZerocoinStartHeight = nLastPOWBlock + 100;
         nZerocoinStartTime = 1546221600; 
 		
 		const char* pszTimestamp = "KRAIT 18-02-2018";
