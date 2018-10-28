@@ -105,11 +105,11 @@ public:
         nMaturity = 6;
 		nMaxMoneyOut = 10000000000 * COIN;
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 200;
+        nLastPOWBlock = 50;
         nModifierUpdateBlock = 1;
 		
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
-        nZerocoinStartHeight = nLastPOWBlock + 100;
+        nZerocoinStartHeight = nLastPOWBlock + 50;
         nZerocoinStartTime = 1546221600; 
 		
 		const char* pszTimestamp = "KRAIT 18-02-2018";
