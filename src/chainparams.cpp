@@ -45,15 +45,13 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-	(0, uint256("0x000008f98da9a790d44ff144e24262fe56d9f7ce7000b7c30c84c45da5c895a9"))
-	(2, uint256("0x000002ad7099c49f639bcf82c5d8c390897624326579100511dcfa88ab6684f4"))
-    (246325, uint256("0x000000001102e9a145f2e2cae79c28eb8b202bcefc74a2dd54e211efd1984581"));
+	(0, uint256("0x000008f98da9a790d44ff144e24262fe56d9f7ce7000b7c30c84c45da5c895a9"));
 	
 	
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1536088757, // * UNIX timestamp of last checkpoint block
-    280766,    // * total number of transactions between genesis and last checkpoint
+    1520530811y, // * UNIX timestamp of last checkpoint block
+    0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2880        // * estimated number of transactions per day after checkpoint
 };
@@ -107,7 +105,7 @@ public:
         nMaturity = 6;
 		nMaxMoneyOut = 10000000000 * COIN;
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 248400;
+        nLastPOWBlock = 200;
         nModifierUpdateBlock = 1;
 		
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
