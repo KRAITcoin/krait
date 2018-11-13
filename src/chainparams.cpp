@@ -71,8 +71,8 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
     CTxOut(nValue=2213.04998960, scriptPubKey=028d89f9489f6f6e3c1f5e26453853)
     CTxOut(nValue=2.55000000, scriptPubKey=OP_DUP OP_HASH160 165e84cec4fc)
 
-  vMerkleTree:  cf6483cee66faa048f6b14ed88b78f8041b28371812f12fe1275c7878a5837cf 10d0403c89b14cdb7fa35f4855c826bbf8a3e5550066fe9867c52d635f21782f 20b8dcaef3b45fee5eefee1c0d94628c1ed9147f09b5e04438f2eb3fc33aa538
- */
+  vMerkleTree:  cf6483cee66faa048f6b14ed88b78f8041b28371812f12fe1275c7878a5837cf 10d0403c89b14cdb7fa35f4855c826bbf8a3e5550066fe9867c52d635f21782f 20b8dcaef3b45fee5eefee1c0d94628c1ed9147f09b5e04438f2eb3fc33aa538 */
+ 
  
  
  
@@ -85,7 +85,7 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     (246325, uint256("0x000000001102e9a145f2e2cae79c28eb8b202bcefc74a2dd54e211efd1984581"))	// last block old blockchain
 	(246326, uint256("0x000000000dbfa11fcedaefcf34ef84b029903789b20bfb51b95e9d56f84d24d8")) //rollback chain fix graviex scam
 	(248318, uint256("000000056d91d8cf163ccfefdef912649d97c66aa37422adedad8b7d0bfd76ce"))  //stable block
-	(260239, uint256("42e773c4aaef5e93ed97693f58752cfda9a114a3d22ed7ba450c9907ee08442b")); .//fix split chain after pos
+	(260239, uint256("42e773c4aaef5e93ed97693f58752cfda9a114a3d22ed7ba450c9907ee08442b")); //fix split chain after pos
 	
 	
 	
