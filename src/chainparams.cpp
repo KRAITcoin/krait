@@ -47,15 +47,15 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
 	(0, uint256("0x000008f98da9a790d44ff144e24262fe56d9f7ce7000b7c30c84c45da5c895a9"))
 	(2, uint256("0x000002ad7099c49f639bcf82c5d8c390897624326579100511dcfa88ab6684f4"))
-    (246325, uint256("0x000000001102e9a145f2e2cae79c28eb8b202bcefc74a2dd54e211efd1984581"))	// last block old blockchain
-	(246326, uint256("0x000000000dbfa11fcedaefcf34ef84b029903789b20bfb51b95e9d56f84d24d8")) //rollback chain fix graviex scam
-	(248318, uint256("000000056d91d8cf163ccfefdef912649d97c66aa37422adedad8b7d0bfd76ce"));  //stable block
-	
+	(246326, uint256("0x000000000dbfa11fcedaefcf34ef84b029903789b20bfb51b95e9d56f84d24d8")) //!!!never not delete!!! rollback chain fix graviex scam !!!never not delete!!!
+	(248318, uint256("000000056d91d8cf163ccfefdef912649d97c66aa37422adedad8b7d0bfd76ce"))  //stable block
+	(259201, uint256("f7027e3a4be729ee7d7fabae57c352cf5d2309ad4440145087ef9b6deaef1d41"))
+	(260240, uint256("4a8174d64a4667b7ae97dc62066623a84d0248545ed55035fe73b40593045382")); //fix split chain after pos
 	
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1540216156, // * UNIX timestamp of last checkpoint block
-    282762,    // * total number of transactions between genesis and last checkpoint
+    1542152086, // * UNIX timestamp of last checkpoint block
+    296330,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2880        // * estimated number of transactions per day after checkpoint
 };
@@ -114,7 +114,7 @@ public:
 		
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
         nZerocoinStartHeight = 259300; 
-        nZerocoinStartTime = 1542672001;  // Tuesday, 20-Nov-18 00:00:01 UTC
+        nZerocoinStartTime = 1541884992;  // 11/10/2018 @ 9:23pm (UTC)
 		
 		const char* pszTimestamp = "KRAIT 18-02-2018";
 		
