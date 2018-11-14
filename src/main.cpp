@@ -2218,6 +2218,11 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
             return 0;
     }
 	
+	if (nHeight > 260400)
+	{
+		return blockValue - (blockValue / 4);
+	}
+	
 	if (nHeight == 0)
 		return 0;
 	
@@ -2460,8 +2465,7 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 
 bool IsInitialBlockDownload()
 {
-        return false;   
-   LOCK(cs_main);
+    LOCK(cs_main);
     if (fImporting || fReindex || chainActive.Height() < Checkpoints::GetTotalBlocksEstimate())
         return true;
     static bool lockIBDState = false;
