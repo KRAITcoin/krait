@@ -44,55 +44,21 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 //    timestamp before)
 // + Contains no strange transactions
 
-/*   height=259203 (check)
- *   CBlock(hash=c8185ff87fbed4ea802e134b2b9ac7af370d5de390f988dd3cf19969bdb80561, ver=3, hashPrevBlock=6f84462020442facb64b112c25e5a4789ab0c047140615fcde790f29ef1bce8b, hashMerkleRoot=ca6bbbde74b07cb003ed64b95653e9e23aea4426b1a471c66d081f909ca00f2f, 
- *   nTime=1541831423, nBits=1c36aa45, nNonce=0, vtx=2)
- *   CTransaction(hash=af3a336f8a, ver=1, vin.size=1, vout.size=1, nLockTime=0)
- *   CTxIn(COutPoint(0000000000000000000000000000000000000000000000000000000000000000, 4294967295), coinbase 0382f4030101)
- *   CTxOut(nValue=0.00000000, scriptPubKey=)
- *   CTransaction(hash=1da7b2e355, ver=1, vin.size=1, vout.size=4, nLockTime=0)
- *   CTxIn(COutPoint(2c42b1b74cf337cef80c110fbb44e63942837ca0b1d4161351409072255bd3e5, 1), scriptSig=30450221008368717f641667)
- *   CTxOut(nValue=0.00000000, scriptPubKey=)
- *   CTxOut(nValue=2501.49000000, scriptPubKey=03feafc9cdc17016fe09cc1130df58)
- *   CTxOut(nValue=2498.95998520, scriptPubKey=03feafc9cdc17016fe09cc1130df58)
- *   CTxOut(nValue=2.55000000, scriptPubKey=OP_DUP OP_HASH160 1aedcd343950)
- *   vMerkleTree:  af3a336f8a7f1694a878292bb5942b1f1c62735586d15b7abdd5f304972f1a2d 1da7b2e3556bdf6b9ce38d17351aba5a127b65898763e594ce1d44fa4e57afb6 ca6bbbde74b07cb003ed64b95653e9e23aea4426b1a471c66d081f909ca00f2f
-
- height=260239
- CBlock(hash=42e773c4aaef5e93ed97693f58752cfda9a114a3d22ed7ba450c9907ee08442b, ver=3, hashPrevBlock=52f751472cfebefa20c44a9b7bb259b9833a87570095dec98d59868a53498cd1, hashMerkleRoot=20b8dcaef3b45fee5eefee1c0d94628c1ed9147f09b5e04438f2eb3fc33aa538,
- nTime=1541884991, nBits=1b0b0f41, nNonce=0, vtx=2) tx=296328 
-  CTransaction(hash=cf6483cee6, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-    CTxIn(COutPoint(0000000000000000000000000000000000000000000000000000000000000000, 4294967295), coinbase 038ff8030101)
-    CTxOut(nValue=0.00000000, scriptPubKey=)
-
-  CTransaction(hash=10d0403c89, ver=1, vin.size=1, vout.size=3, nLockTime=0)
-    CTxIn(COutPoint(c76180cab99b2ce4996719ac5d33e61734fd99a8ac6bbd09422ee3a287f29d60, 1), scriptSig=3045022100ba8bfb601c0ab4)
-    CTxOut(nValue=0.00000000, scriptPubKey=)
-    CTxOut(nValue=2213.04998960, scriptPubKey=028d89f9489f6f6e3c1f5e26453853)
-    CTxOut(nValue=2.55000000, scriptPubKey=OP_DUP OP_HASH160 165e84cec4fc)
-
-  vMerkleTree:  cf6483cee66faa048f6b14ed88b78f8041b28371812f12fe1275c7878a5837cf 10d0403c89b14cdb7fa35f4855c826bbf8a3e5550066fe9867c52d635f21782f 20b8dcaef3b45fee5eefee1c0d94628c1ed9147f09b5e04438f2eb3fc33aa538 */
- 
- 
- 
- 
-
-
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
 	(0, uint256("0x000008f98da9a790d44ff144e24262fe56d9f7ce7000b7c30c84c45da5c895a9"))
 	(2, uint256("0x000002ad7099c49f639bcf82c5d8c390897624326579100511dcfa88ab6684f4"))
-    (246325, uint256("0x000000001102e9a145f2e2cae79c28eb8b202bcefc74a2dd54e211efd1984581"))	// last block old blockchain
-	(246326, uint256("0x000000000dbfa11fcedaefcf34ef84b029903789b20bfb51b95e9d56f84d24d8")) //rollback chain fix graviex scam
+	(246326, uint256("0x000000000dbfa11fcedaefcf34ef84b029903789b20bfb51b95e9d56f84d24d8")) //!!!never not delete!!! rollback chain fix graviex scam !!!never not delete!!!
 	(248318, uint256("000000056d91d8cf163ccfefdef912649d97c66aa37422adedad8b7d0bfd76ce"))  //stable block
-	(260239, uint256("42e773c4aaef5e93ed97693f58752cfda9a114a3d22ed7ba450c9907ee08442b")); //fix split chain after pos
+	(259201, uint256("f7027e3a4be729ee7d7fabae57c352cf5d2309ad4440145087ef9b6deaef1d41"))
+	(260240, uint256("4a8174d64a4667b7ae97dc62066623a84d0248545ed55035fe73b40593045382")); //fix split chain after pos
 	
 	
 	
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1541884991, // * UNIX timestamp of last checkpoint block
-    296328,    // * total number of transactions between genesis and last checkpoint
+    1542152086, // * UNIX timestamp of last checkpoint block
+    296330,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2880        // * estimated number of transactions per day after checkpoint
 };
